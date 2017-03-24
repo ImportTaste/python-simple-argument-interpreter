@@ -29,6 +29,24 @@ Output:
 True
 False
 ```
+Pysai.checkFlags(arglist, argtofind), pysai.checkOptions(arglist, argtofind):
+Parses through given arglist and checks if all flags/options are there.
+Example:
+```python
+import pysai
+arglist = ["-j", "-r", "ttt", "--tnt", "boom", ".oO"]
+print pysai.checkFlags(arglist, ["-j", "--tnt"])
+print pysai.checkFlags(arglist, ["-r", "--r"])
+print pysai.checkOptions(arglist, ["--tnt", "-r"])
+print pysai.checkOptions(arglist, ["-j", "--tnt", ".oO"])
+```
+Output:
+```
+True
+False
+True
+False
+```
 # More examples
 ```python
 import pysai
