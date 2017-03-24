@@ -60,7 +60,7 @@ print pysai.option(arglist, "/K")
 
 print pysai.flag(arglist, "dog")
 print pysai.flag(arglist, "end")
-print pysai.flag(arglist, -K)
+print pysai.flag(arglist, "-K")
 print pysai.flag(arglist, "-mlk")
 print pysai.flag(arglist, "+=+")
 ```
